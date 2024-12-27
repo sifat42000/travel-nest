@@ -8,9 +8,9 @@ import { MdCopyright, MdLocalPhone } from 'react-icons/md';
 
 const Footer = () => {
     return (
-        <footer  className='container mx-auto mt-[80px]'>
+        <footer  className=' mt-[80px]'>
             <div >
-                <div className='lg:flex justify-between ml-3 lg:ml-0'>
+                <div className='lg:flex justify-between ml-3 lg:ml-6'>
                     {/* 1st */}
                     <div>
                         <p className='text-[#07689F] mb-3 font-bold text-xl'>Go Further With The EasySet24 App</p>
