@@ -2,116 +2,83 @@ import Image from 'next/image';
 import React from 'react';
 
 const Banner2 = () => {
-    return (
-        <div
-            className="hero container mx-auto mb-20 bg-[url(/assets/images/banner-2/f9cabc1ad07652d26b66eb9537ba0a6d.jpg)] w-[1300px] h-[1120px] lg:h-[700px]"
-           >
-            <div className="hero-overlay bg-opacity-60"></div>
-           
-            {/* first card */}
-            <div  className="hero-content mr-[950px] lg:mr-[580px] mb-[400px] text-neutral-content text-center ">
-                <div className="max-w-md">
+  const cards = [
+    { top: 375, left: 33, country: 'New Jersey', place: 'Windsor' },
+    { top: 59, left: 255, country: 'Belgium', place: 'Bruxelles Gare du Midi' },
+    { top: 300, left: 455, country: 'Nepal', place: 'Hyatt Regency K' },
+    { top: 100, left: 910, country: 'Amsterdam', place: 'Bunk' },
+    { top: 400, left: 830, country: 'Gothenburg', place: 'First Hotel G' },
+  ];
 
-                    <div  className=" bg-white h-[185px] w-[360px] -mt-64 lg:-mt-10 mr-20  shadow-xl flex gap-2">
-                       <div className='p-3'>
-                      
-                            <Image  className='w-[140px] h-[160px]' alt='card-1' height={124} width={125} src={'/assets/images/banner-2/banner-1.jpg'} />
-                       
-                       </div>
-                        <div className="mt-16">
-                            <h2 className=" text-black text-left font-bold text-xl">Belgium</h2>
-                            <p className='text-black'>Bruxelles Gare du Midi</p>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
+  return (
+    <div className="relative mx-auto max-w-[1395px] h-[840px] mb-14  md:h-[600px] bg-[url(/assets/images/banner-2/f9cabc1ad07652d26b66eb9537ba0a6d.jpg)] bg-cover bg-center">
+      {/* লিনিয়ার গ্রেডিয়েন্ট */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+      {/* কার্ডস */}
+      <div className="absolute inset-0 xl:block hidden pr-2">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="absolute flex items-center gap-1 w-[350px] h-[177px] bg-white shadow-lg rounded-lg"
+            style={{
+              top: card.top,
+              left: card.left,
+            }}
+          >
+            <Image className='absolute top-[-10] left-[-6] w-[70] h-[60]' src={`/assets/images/banner-2/banner-6.png`} alt='pic' height={55} width={55} />
+
+            <p className="text-[#EFEFEF] font-light opacity-80 absolute top-[8px] left-[-1px] [font-size:0.5rem] rotate-[-40deg]">
+  Best Deals
+</p>
+
+            {/* ইমেজ */}
+            <Image
+              src={`/assets/images/banner-2/banner-${index + 1}.jpg`}
+              alt={`Card ${index + 1}`}
+              height={140}
+              width={140}
+              className="w-[180px] h-[175px] p-2 object-cover rounded-lg"
+            />
+            {/* টেক্সট */}
+            <div className="flex flex-col">
+              <span className="text-black font-bold">{card.country}</span>
+              <span className="text-black text-sm">{card.place}</span>
             </div>
 
+          </div>
 
-            {/* secound card */}
-            <div  className="hero-content  mr-[800px] ml-[-150px] lg:ml-0 -mt-72 lg:mt-[400px] text-neutral-content text-center ">
-                <div className="max-w-md">
+        ))}
 
-                    <div className="h-[185px] w-[360px] bg-white -mt-10 mr-20   shadow-xl flex gap-2">
-                       <div className='p-3'>
-                      
-                            <Image className='h-[160px] w-[140px]' alt='card-1' height={124} width={125} src={'/assets/images/banner-2/banner-2.jpg'} />
-                       
-                       </div>
-                        <div className="mt-16">
-                            <h2 className=" text-black text-left font-bold text-xl">New Jersey</h2>
-                            <p className='text-black'>Windsor</p>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
+
+
+      </div>
+
+      {/* ছোট ডিভাইসের জন্য ফ্লেক্সবক্স লেআউট */}
+      <div className="absolute inset-0 flex flex-wrap justify-center items-center gap-4 px-4 xl:hidden">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="flex items-center gap-4 w-[90%] sm:w-[70%] md:w-[35%] h-[140px] bg-white shadow-lg rounded-lg"
+          >
+            {/* ইমেজ */}
+            <Image
+              src={`/assets/images/banner-2/banner-${index + 1}.jpg`}
+              alt={`Card ${index + 1}`}
+              height={140}
+              width={140}
+              className="w-[125px] h-[124px] p-3 object-cover rounded-lg"
+            />
+            {/* টেক্সট */}
+            <div className="flex flex-col">
+              <span className="text-black font-bold">{card.country}</span>
+              <span className="text-black text-sm">{card.place}</span>
             </div>
-            
-
-            {/* third card */}
-            <div  className="ml-[-380px] lg:ml-[800px] lg:mb-[400px] mr-[575px] -mb-[110px] lg:mr-0 hero-content text-neutral-content text-center ">
-                <div className="max-w-md">
-
-                    <div  className=" bg-white -mt-10 mr-20  w-[360px] h-[185px] shadow-xl flex gap-2">
-                       <div className='p-3'>
-                      
-                            <Image  className='h-[160px] w-[140px] ' alt='card-1' height={124} width={125} src={'/assets/images/banner-2/banner-5.jpg'} />
-                       
-                       </div>
-                        <div className="mt-16">
-                            <h2 className=" text-black text-left font-bold text-xl">Amsterdam</h2>
-                            <p className='text-black'>Bunk</p>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-
-            {/* fouth card */}
-            <div  className="lg:ml-[760px] mt-[500px] hero-content -ml-[954px] text-neutral-content text-center ">
-                <div className="max-w-md">
-
-                    <div className=" bg-white -mt-10 mr-20  w-[360px] h-[185px] shadow-xl flex gap-2">
-                       <div className='p-3'>
-                      
-                            <Image  className='h-[160px] w-[140px] '  alt='card-1' height={124} width={125} src={'/assets/images/banner-2/banner-4.jpg'} />
-                       
-                       </div>
-                        <div className="mt-16">
-                            <h2 className=" text-black text-left font-bold text-xl">Gothenburg</h2>
-                            <p className='text-black'>First Hotel G</p>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-
-            {/* fivth card */}
-            <div   className="mt-[900px] mr-[950px] lg:mr-0 lg:mt-[120px] hero-content text-neutral-content text-center ">
-                <div className="max-w-md">
-
-                    <div  className=" bg-white -mt-10 mr-20 h-[185px] w-[360px]   shadow-xl flex gap-2">
-                       <div className='p-3'>
-                      
-                            <Image  className='h-[160px] w-[140px] ' alt='card-1' height={124} width={125} src={'/assets/images/banner-2/banner-3.jpg'} />
-                       
-                       </div>
-                        <div className="mt-16">
-                            <h2 className=" text-black text-left font-bold text-xl">Nepal</h2>
-                            <p className='text-black'>Hyatt Regency K</p>
-                            
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Banner2;

@@ -16,20 +16,21 @@ const UnderNav = () => {
     ];
 
     return (
-        <div className=' ml-0 lg:ml-96   mt-12 mb-20'>
+        <div className=' container mx-auto md:h-32 lg:h-16 max-w-[850px]  mt-12 mb-12 lg:mb-0 '>
             {/* Map through each button */}
             {buttons.map((btn) => (
                 <button
                     key={btn.id}
                     onClick={() => setActiveBtn(btn.id)} // Set active button id on click
                     className={`${activeBtn === btn.id ? "bg-[#07689F] text-[#FFFFFF] font-bold" : "bg-white"} 
-                        p-2 w-[121.33px] h-[40px]  border border-[#A6A6A6] mb-[-3] lg:mb-0  gap-4`}
+                        p-2 w-[121.33px] h-[40px]  border border-[#A6A6A6] mt-6 gap-3`}
                         style={{
                             borderWidth: "1px",
                             borderStyle: "solid",
                             padding: "8px 16px",
-                            margin: "0px 16px",
+                            margin: "0px 9px",
                             borderRadius: "20px",
+                            marginBottom: "10px"
                         }}
                 >
                     {btn.label}

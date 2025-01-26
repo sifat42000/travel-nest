@@ -7,28 +7,28 @@ export default {
     "./src/Search/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+  // theme: {
+  //   screens: {
+  //     'sm': '640px',
+  //     // => @media (min-width: 640px) { ... }
 
-      'md': '790px',
-      // => @media (min-width: 1024px) { ... }
+  //     'md': '790px',
+  //     // => @media (min-width: 1024px) { ... }
 
-      'lg': '1280px',
-      // => @media (min-width: 1280px) { ... }
-    },
-    extend: {
-      spacing: {
-        '300px': '300px',
-        '350px': '350px',
-      },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
-  },
+  //     'lg': '1280px',
+  //     // => @media (min-width: 1280px) { ... }
+  //   },
+  //   extend: {
+  //     spacing: {
+  //       '300px': '300px',
+  //       '350px': '350px',
+  //     },
+  //     colors: {
+  //       background: "var(--background)",
+  //       foreground: "var(--foreground)",
+  //     },
+  //   },
+  // },
   plugins: [
     require('daisyui'),
   ],

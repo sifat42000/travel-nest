@@ -4,12 +4,13 @@ import React from 'react';
 import { BiDollar } from "react-icons/bi";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
+import { IoSearch } from 'react-icons/io5';
 import { LuPhoneCall } from "react-icons/lu";
 
 const Nav = () => {
     return (
         <div className="navbar container mx-auto mt-4">
-            <div className="flex justify-between items-center w-full">
+            <div className="flex flex-wrap justify-between items-center w-full">
                 {/* Logo Section */}
                 <div className="flex-shrink-0">
                     <Link href={'/'}>
@@ -18,18 +19,26 @@ const Nav = () => {
                 </div>
 
                 {/* Input Field */}
-                <div className="flex-grow justify-center px-8 hidden lg:flex">
+                <div className="flex-grow justify-center px-8 hidden xl:flex relative">
                     <input
                         type="text"
                         placeholder="Type here"
-                        className="color-white input input-bordered  lg:w-[700px]"
-                       
+                        className="color-white input input-bordered lg:w-[700px] pr-10"
+                    />
+                    {/* Search Icon */}
+                    <IoSearch
+                        className="absolute xl:right-20 2xl:right-[210px] text-2xl top-1/2 transform -translate-y-1/2 text-gray-500"
+                        size={20} // Adjust icon size here
                     />
                 </div>
 
-
                 {/* Icons + Avatar + Name */}
                 <div className="flex items-center space-x-5 flex-shrink-0">
+                    <div className="avatar">
+                        <div className="w-6 rounded-full">
+                            <img src="/assets/images/avatars/fc71449c73829a67d58b01b72b310b30.png" />
+                        </div>
+                    </div>
                     <BiDollar className='text-2xl text-blue-900 font-bold' />
                     <FaRegQuestionCircle className='text-2xl text-blue-900 font-bold' />
                     <GrFavorite className='text-2xl text-blue-900 font-bold' />

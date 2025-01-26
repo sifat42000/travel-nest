@@ -3,6 +3,13 @@ import "./globals.css";
 import Nav from "@/Components/Shared/Nav";
 import Footer from "@/Components/Shared/Footer";
 import UnderNav from "@/Components/Shared/UnderNav";
+import { Poppins } from '@next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'], 
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], 
+  style: ['normal', 'italic'], 
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,9 +28,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en " className="bg-[#F9F9F9]">
+    <html lang="en " className={poppins.className}   >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F9F9F9]`}>
         <Nav />
         <UnderNav />
         {children}

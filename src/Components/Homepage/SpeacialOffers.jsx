@@ -1,80 +1,63 @@
 import React from 'react';
+import { IoMdArrowRoundForward } from 'react-icons/io';
 
 const SpeacialOffers = () => {
     return (
-        <div className='container mx-auto'>
-            <p className='text-3xl ml-20  text-black font-bold mb-4'>Special offers</p>
+        <div>
+            <div className="container  mx-auto px-4  sm:max-w-[370]  md:max-w-[730]  lg:max-w-[1345]">
+                <p className="text-3xl text-black font-bold mb-6">Special Offers</p>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   ml-4 lg:ml-0 gap-4'>
-                {/* card-one */}
-                <div className="hero ml-16 lg:ml-[95px]  h-[300px]  max-w-[320px] bg-[url(/assets/images/speacial-offers/special-1.jpg)]">
-                    <div className="hero-overlay bg-opacity-15"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                        <div className="max-w-md">
-                            <button className="text-xl btn btn-primary w-[225px] h-[18px] flex justify-center items-center gap-4 border border-solid rounded-md mt-48 mx-auto">
-                                Loyalty Discounts
-                            </button>
-                        </div>
+                <div className=" sm:flex-none px-0 md:flex lg:flex flex-wrap gap-y-3 gap-x-3 gap-4">
+                    {/* card-one */}
+                    <div className="relative mb-3 md:mb-0 lg:mb-0 h-[300px] w-[340px] bg-[url(/assets/images/speacial-offers/special-1.jpg)] bg-cover bg-center">
+                        <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                        <button className="text-lg md:text-xl btn btn-primary flex gap-2 border border-solid rounded-md absolute bottom-4 left-4">
+                            Loyalty Discounts
+                            <IoMdArrowRoundForward />
+                        </button>
                     </div>
-                </div>
-                {/* card-two */}
-                <div className="hero ml-16 lg:ml-0 h-[300px] max-w-[320px] lg:max-w-[600px] bg-[url(/assets/images/speacial-offers/special-2.jpg)]">
-                    <div className="hero-overlay bg-opacity-15"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                        <div className="max-w-md">
-                            <button className="text-xl btn btn-primary w-72 h-4 flex justify-center items-center gap-4 mt-48 mx-auto border border-solid rounded-md">
-                                Early Booking Discounts
-                            </button>
-                        </div>
+                    {/* card-two */}
+                    <div className="relative mb-3 md:mb-0 lg:mb-0 h-[300px] w-[340px] lg:w-[600px] bg-[url(/assets/images/speacial-offers/special-2.jpg)] bg-cover bg-center">
+                        <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                        <button className="text-lg md:text-xl btn btn-primary flex gap-2 border border-solid rounded-md absolute bottom-4 left-4">
+                            Early Booking Discounts
+                            <IoMdArrowRoundForward />
+                        </button>
                     </div>
-                </div>
-                {/* card-three */}
-                <div className="hero ml-16 lg:ml-0  h-[300px]  max-w-[320px] bg-[url(/assets/images/speacial-offers/special-3.jpg)]">
-                    <div className="hero-overlay bg-opacity-15"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                        <div className="max-w-md">
-                            <button className="text-xl btn btn-primary w-56 h-4 flex justify-center items-center gap-4 mt-48 mx-auto border border-solid rounded-md">
-                                Last-Minute Deals
-                            </button>
-                        </div>
+                    {/* card-three */}
+                    <div className="relative mb-3 md:mb-0 lg:mb-0 h-[300px] w-[340px] bg-[url(/assets/images/speacial-offers/special-3.jpg)] bg-cover bg-center">
+                        <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                        <button className="text-lg md:text-xl btn btn-primary flex gap-2 border border-solid rounded-md absolute bottom-4 left-4">
+                            Last-Minute Deals
+                            <IoMdArrowRoundForward />
+                        </button>
                     </div>
-                </div>
-                 {/* card-four */}
-                 <div className="hero ml-16 lg:ml-[95px]  h-[300px] max-w-[320px] bg-[url(/assets/images/speacial-offers/special-4.jpg)]">
-                    <div className="hero-overlay bg-opacity-15"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                        <div className="max-w-md">
-                            <button className="text-xl btn btn-primary w-56 h-4 flex justify-center items-center gap-4 mt-48 mx-auto border border-solid rounded-md">
-                                Family Packages
-                            </button>
-                        </div>
+                    {/* card-four */}
+                    <div className="relative mb-3 md:mb-0 lg:mb-0 h-[300px] w-[340px] bg-[url(/assets/images/speacial-offers/special-4.jpg)] bg-cover bg-center">
+                        <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                        <button className="text-lg md:text-xl btn btn-primary flex gap-2 border border-solid rounded-md absolute bottom-4 left-4">
+                            Family Packages
+                            <IoMdArrowRoundForward />
+                        </button>
                     </div>
-                </div>
-                {/* card-five */}
-                <div className="hero ml-16 lg:ml-0  max-w-[320px] lg:max-w-[600px] h-[300px] bg-[url(/assets/images/speacial-offers/special-5.jpg)]">
-                    <div className="hero-overlay bg-opacity-15"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                        <div className="max-w-md">
-                            <button className="text-xl btn btn-primary w-72 h-4 flex justify-center items-center gap-4 mt-48 mx-auto border border-solid rounded-md">
-                                Birthday or Anniversary Specials
-                            </button>
-                        </div>
+                    {/* card-five */}
+                    <div className="relative mb-3 md:mb-0 lg:mb-0 h-[300px] w-[340px] lg:w-[600px] bg-[url(/assets/images/speacial-offers/special-5.jpg)] bg-cover bg-center">
+                        <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                        <button className="text-lg md:text-xl btn btn-primary flex gap-2 border border-solid rounded-md absolute bottom-4 left-4">
+                            Birthday or Anniversary
+                            <IoMdArrowRoundForward />
+                        </button>
                     </div>
-                </div>
-                {/* card-six */}
-                <div className="hero ml-16 lg:ml-0  bg-[url(/assets/images/speacial-offers/special-6.jpg)]  max-w-[320px] h-[300px]">
-                    <div className="hero-overlay bg-opacity-15"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                        <div className="max-w-md">
-                            <button className="text-xl btn btn-primary w-56 h-4 flex justify-center items-center gap-4 mt-48 mx-auto border border-solid rounded-md">
-                                Referral Programs
-                            </button>
-                        </div>
+                    {/* card-six */}
+                    <div className="relative h-[300px] w-[340px] bg-[url(/assets/images/speacial-offers/special-6.jpg)] bg-cover bg-center">
+                        <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                        <button className="text-lg md:text-xl btn btn-primary flex gap-2 border border-solid rounded-md absolute bottom-4 left-4">
+                            Referral Programs
+                            <IoMdArrowRoundForward />
+                        </button>
                     </div>
                 </div>
             </div>
-
-            
         </div>
     );
 };

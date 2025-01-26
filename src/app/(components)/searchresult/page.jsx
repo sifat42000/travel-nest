@@ -3,34 +3,57 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { GrFavorite } from 'react-icons/gr';
+import { BsArrowsExpand } from "react-icons/bs";
+import { CiLocationOn } from "react-icons/ci";
+import { BsCup } from "react-icons/bs";
+import { IoLeafOutline, IoPersonOutline } from "react-icons/io5";
+import { LuClock } from "react-icons/lu";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { MdErrorOutline } from 'react-icons/md';
+import { TbSunLow } from 'react-icons/tb';
+import { BiLike } from 'react-icons/bi';
+
+
+
+
+
 
 const page = () => {
+    
     return (
-        <div className='container mx-auto mb-6'>
+        <div className='container w-full mx-auto mb-6 relative '>
             <Search />
             <div className='flex-none lg:flex gap-6 mb-32 lg:mb-10 ml-8 lg:ml-0'>
                 <Image src={'/assets/images/search-result/map.png'} height={200} width={270} alt='map' />
                 <div>
-                    <div className=' lg:w-[280px] h-[45px] bg-[#FFFFFF] items-center p-2 mb-3'>
-                        <p className='text-xl text-[#565656] font-bold'>Sort By : <span className='text-sm'>Our top Picks For Families</span></p>
-
+                    <div className="lg:w-[310px] h-[45px] bg-[#FFFFFF] flex items-center justify-between border border-[#D9D9D9] p-2 mb-3">
+                        <p className="text-xl text-[#565656] font-bold">
+                            Sort By :
+                            <span className="text-sm ml-2">
+                                Our top Picks For Families
+                            </span>
+                        </p>
+                        <BsArrowsExpand className="text-[#565656] text-lg" />
                     </div>
+
                     <h3 className='text-[#565656] text-2xl font-bold'>Gothenburg</h3>
                     <p className='text-[#000000] font-semibold mb-2'>120 Properties Found</p>
                     <p className=' w-[400px] lg:w-[648px] h-[81px]'>
-                        Travel professionals dedicated to simplifying your travel experience by curating flight and accommodation services on a user-friendly platform. Committed to quality and assurance.
-                        <span className='text-[#07689F] font-bold'> Find More Here ...</span>
+                        Travel professionals dedicated to simplifying your travel experience by curating flight and accommodation services on a user-friendly platform. Committed to quality and<br></br> assurance.
+                        <span className='text-[#07689F] text-sm font-bold'> Find More Here ...</span>
                     </p>
 
                 </div>
             </div>
 
 
-            <div className='flex-none lg:flex gap-10'>
+            <div className='flex-none lg:flex  pl-3 '>
                 {/* 1st part */}
-                <div className='ml-16 lg:ml-0'>
+                <div className='ml-16 lg:ml-0  w-[600]'>
                     <p className='text-2xl text-[#565656] font-bold mb-4'>Filter By</p>
-                    <p className='font-semibold text-[#000000] mb-4'>Your Budget for per night </p>
+                    <p className=' text-[#000000] mb-4'>Your Budget for per night </p>
+                    <input className='mb-7'  type="range" min='1' max='100' />
+                    
                     <div className='flex gap-3 mb-5'>
                         <input placeholder='Min Price $' className='h-[40px] w-[105px] outline-none p-3' />
                         <input placeholder='Min Price $' className='h-[40px] w-[105px] outline-none p-3' />
@@ -73,7 +96,7 @@ const page = () => {
                             />
                             <p>Pet friendly</p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 2nd cheakbox */}
                     <div className='mb-5'>
@@ -113,7 +136,7 @@ const page = () => {
                             />
                             <p>Bathtub</p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 3rd cheakbox */}
                     <div className='mb-5'>
@@ -160,7 +183,7 @@ const page = () => {
                             />
                             <p>Poor </p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 4th cheakbox */}
                     <div className='mb-5'>
@@ -200,7 +223,7 @@ const page = () => {
                             />
                             <p>Single Beds</p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 5th cheakbox */}
                     <div className='mb-5'>
@@ -240,7 +263,7 @@ const page = () => {
                             />
                             <p>Yoga</p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 6th cheakbox */}
                     <div className='mb-5'>
@@ -259,7 +282,7 @@ const page = () => {
                             />
                             <p>Level and Above 2</p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 7th cheakbox */}
                     <div className='mb-5'>
@@ -286,7 +309,7 @@ const page = () => {
                             />
                             <p>3 Stars</p>
                         </div>
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
                     {/* 8th cheakbox */}
                     <div className='mb-5'>
@@ -314,7 +337,7 @@ const page = () => {
                             <p>Less Than 15 Km</p>
                         </div>
 
-                        <p className='text-[#07689F]'>Show More</p>
+                        <p className='text-[#07689F] flex gap-2'>Show More <IoIosArrowDown className='mt-[3px] text-xl  font-bold' /></p>
                     </div>
 
 
@@ -322,246 +345,364 @@ const page = () => {
                 </div>
                 {/* 2nd part */}
                 <div>
-                    <div className='flex-none lg:flex gap-60 bg-[#FFFFFF] h-[550px] lg:h-[350px] mb-9'>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
+                   
                         {/* 2nd 1 part */}
-                        <div className=' flex gap-8 p-5'>
+                        <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
                             <div
-                                className="hero bg-[url(/assets/images/search-result/hotel-1.jpg)] w-[220px] h-[270px]"
+                                className="hero relative bg-[url(/assets/images/search-result/hotel-1.jpg)] w-[220px] h-[270px]"
                             >
 
                                 <div className="hero-content mt-[180px] text-neutral-content">
                                     <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='border-white outline-rose-50'>
-                                            <p className='text-[#FFFFFF] mt-52 ml-40'>8,2</p>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                            <div className='flex text-[#FFFFFF] text-2xl '>
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+
+                                            </div>
+
+                                            
+                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+                                               
+                                            
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             {/* //text */}
-                            <div>
+                            <div className='mt-5'>
                                 <p className='text-[#000000] font-bold text-2xl mb-2'>Radisson Blu</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Located In Downton, 500m Distance to Shore</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Breakfast Included</p>
-                                <p className='text-[#565656] font-semibold mb-5'>1 Adult,2 Children 4 Nights </p>
+                                <p className='mb-1 text-[#565656]  font-semibold flex gap-3 sm:w-[400px] '><CiLocationOn className='mt-[2px]  text-lg text-[#565656] font-bold ' />
+                                    Located In Downton, 500m Distance to Shore</p>
+                                <p className='mb-1 text-[#565656] font-semibold flex gap-3'><BsCup className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    Breakfast Included</p>
+                                <p className='text-[#565656] font-semibold mb-9 flex gap-3'><IoPersonOutline className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    1 Adult,   2 Children <LuClock className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    4 Nights </p>
                                 <p>Experience Unique Opportunity </p>
                                 <p className='text-[#565656] font-semibold'>Standard rooms </p>
-                                <p className='text-[#000000] font-bold text-xl'>Very Good <span className='text-[#565656] text-sm	 font-semibold'>, 2.259 Reviews</span></p>
+                                <p className='text-[#000000] font-bold text-lg flex gap-3'>Very Good<span className='text-[#565656] text-sm	mt-[8px] font-semibold'>, 2.259 Reviews</span><IoIosArrowDown className='mt-[8px] text-xl text-[#565656] font-bold' />
+                                </p>
 
                             </div>
 
                         </div>
                         {/* 2nd 2 part */}
-                        <div className='p-5 mt-3 lg:mt-24'>
+                        <div className='p-5 mt-3 xl:mt-24'>
+                           
+                            
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>12% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
-                            <p className='text-[#4C9839]'>trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E]'>We Have 8 Left at 12% off</p>
-                            <p className='text-[#07689F] text-xl font-bold'>See Availability </p>
+                            <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
+                                trip Sustainable Level, 5</p>
+                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                                We Have 8 Left at 12% off</p>
+                            <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
+                            </p>
 
                         </div>
 
 
                     </div>
-                    <div className='flex-none lg:flex gap-60 bg-[#FFFFFF] h-[550px] lg:h-[350px] mb-9'>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180] relative  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
+                    <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
+                            
+                            <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
+                             Vip Gifts
+                            </p>
                         {/* 2nd 1 part */}
-                        <div className='flex gap-8 p-5'>
+                        <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
                             <div
-                                className="hero bg-[url(/assets/images/search-result/hotel-2.jpg)] w-[220px] h-[270px]"
+                                className="hero relative bg-[url(/assets/images/search-result/hotel-2.jpg)] w-[220px] h-[270px]"
                             >
 
                                 <div className="hero-content mt-[180px] text-neutral-content">
-                                    <div className='mr-44 w-[50px] h-[50px]'   >
+                                    <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='border-white outline-rose-50'>
-                                            <p className='text-[#FFFFFF] mt-52 ml-40'>8,2</p>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                            <div className='flex text-[#FFFFFF] text-2xl '>
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+
+                                            </div>
+
+                                            
+                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+                                               
+                                            
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             {/* //text */}
-                            <div>
+                            <div className='mt-5'>
                                 <p className='text-[#000000] font-bold text-2xl mb-2'>Radisson Blu</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Located In Downton, 500m Distance to Shore</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Breakfast Included</p>
-                                <p className='text-[#565656] font-semibold mb-5'>1 Adult,2 Children 4 Nights </p>
+                                <p className='mb-1 text-[#565656]  font-semibold flex gap-3 sm:w-[400px] '><CiLocationOn className='mt-[2px]  text-lg text-[#565656] font-bold ' />
+                                    Located In Downton, 500m Distance to Shore</p>
+                                <p className='mb-1 text-[#565656] font-semibold flex gap-3'><BsCup className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    Breakfast Included</p>
+                                <p className='text-[#565656] font-semibold mb-9 flex gap-3'><IoPersonOutline className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    1 Adult,   2 Children <LuClock className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    4 Nights </p>
                                 <p>Experience Unique Opportunity </p>
                                 <p className='text-[#565656] font-semibold'>Standard rooms </p>
-                                <p className='text-[#000000] font-bold text-xl'>Very Good <span className='text-[#565656] text-sm	 font-semibold'>, 2.259 Reviews</span></p>
+                                <p className='text-[#000000] font-bold text-lg flex gap-3'>Very Good<span className='text-[#565656] text-sm	mt-[8px] font-semibold'>, 2.259 Reviews</span><IoIosArrowDown className='mt-[8px] text-xl text-[#565656] font-bold' />
+                                </p>
 
                             </div>
 
                         </div>
                         {/* 2nd 2 part */}
-                        <div className='p-5 mt-3 lg:mt-24'>
+                        <div className='p-5 mt-3 xl:mt-24'>
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>12% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
-                            <p className='text-[#4C9839]'>trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E]'>We Have 8 Left at 12% off</p>
-                            <p className='text-[#07689F] text-xl font-bold'>See Availability </p>
+                            <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
+                                trip Sustainable Level, 5</p>
+                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                                We Have 8 Left at 12% off</p>
+                            <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
+                            </p>
 
                         </div>
 
 
                     </div>
-                    <div className='flex-none lg:flex gap-60 bg-[#FFFFFF] h-[550px] lg:h-[350px] mb-9'>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
                         {/* 2nd 1 part */}
-                        <div className='flex gap-8 p-5'>
+                        <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
                             <div
-                                className="hero w-[220px] h-[270px] bg-[url(/assets/images/search-result/hotel-3.jpg)]"
+                                className="hero relative bg-[url(/assets/images/search-result/hotel-3.jpg)] w-[220px] h-[270px]"
                             >
 
                                 <div className="hero-content mt-[180px] text-neutral-content">
-                                    <div className='mr-44 h-[50px] w-[50px]'   >
+                                    <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='border-white outline-rose-50'>
-                                            <p className='text-[#FFFFFF] mt-52 ml-40'>8,2</p>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                            <div className='flex text-[#FFFFFF] text-2xl '>
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+
+                                            </div>
+
+                                            
+                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+                                               
+                                            
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             {/* //text */}
-                            <div>
+                            <div className='mt-5'>
                                 <p className='text-[#000000] font-bold text-2xl mb-2'>Radisson Blu</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Located In Downton, 500m Distance to Shore</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Breakfast Included</p>
-                                <p className='text-[#565656] font-semibold mb-5'>1 Adult,2 Children 4 Nights </p>
+                                <p className='mb-1 text-[#565656]  font-semibold flex gap-3 sm:w-[400px] '><CiLocationOn className='mt-[2px]  text-lg text-[#565656] font-bold ' />
+                                    Located In Downton, 500m Distance to Shore</p>
+                                <p className='mb-1 text-[#565656] font-semibold flex gap-3'><BsCup className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    Breakfast Included</p>
+                                <p className='text-[#565656] font-semibold mb-9 flex gap-3'><IoPersonOutline className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    1 Adult,   2 Children <LuClock className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    4 Nights </p>
                                 <p>Experience Unique Opportunity </p>
                                 <p className='text-[#565656] font-semibold'>Standard rooms </p>
-                                <p className='text-[#000000] font-bold text-xl'>Very Good <span className='text-[#565656] text-sm	 font-semibold'>, 2.259 Reviews</span></p>
+                                <p className='text-[#000000] font-bold text-lg flex gap-3'>Very Good<span className='text-[#565656] text-sm	mt-[8px] font-semibold'>, 2.259 Reviews</span><IoIosArrowDown className='mt-[8px] text-xl text-[#565656] font-bold' />
+                                </p>
 
                             </div>
 
                         </div>
                         {/* 2nd 2 part */}
-                        <div className='p-5 mt-3 lg:mt-24'>
+                        <div className='p-5 mt-3 xl:mt-24'>
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>12% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
-                            <p className='text-[#4C9839]'>trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E]'>We Have 8 Left at 12% off</p>
-                            <p className='text-[#07689F] text-xl font-bold'>See Availability </p>
+                            <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
+                                trip Sustainable Level, 5</p>
+                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                                We Have 8 Left at 12% off</p>
+                            <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
+                            </p>
 
                         </div>
 
 
                     </div>
-                    <div className='flex-none lg:flex gap-60 bg-[#FFFFFF] h-[550px] lg:h-[350px] mb-9'>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180] relative  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
+                    <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
+                            
+                            <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
+                             Vip Gifts
+                            </p>
                         {/* 2nd 1 part */}
-                        <div className='flex gap-8 p-5'>
+                        <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
                             <div
-                                className="hero bg-[url(/assets/images/search-result/hotel-4.jpg)] w-[220px] h-[270px]"
+                                className="hero relative bg-[url(/assets/images/search-result/hotel-4.jpg)] w-[220px] h-[270px]"
                             >
 
                                 <div className="hero-content mt-[180px] text-neutral-content">
-                                    <div className='mr-44 w-[50px] h-[50px]'   >
+                                    <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='border-white outline-rose-50'>
-                                            <p className='text-[#FFFFFF] mt-52 ml-40'>8,2</p>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                            <div className='flex text-[#FFFFFF] text-2xl '>
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+
+                                            </div>
+
+                                            
+                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+                                               
+                                            
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             {/* //text */}
-                            <div>
+                            <div className='mt-5'>
                                 <p className='text-[#000000] font-bold text-2xl mb-2'>Radisson Blu</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Located In Downton, 500m Distance to Shore</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Breakfast Included</p>
-                                <p className='text-[#565656] font-semibold mb-5'>1 Adult,2 Children 4 Nights </p>
+                                <p className='mb-1 text-[#565656]  font-semibold flex gap-3 sm:w-[400px] '><CiLocationOn className='mt-[2px]  text-lg text-[#565656] font-bold ' />
+                                    Located In Downton, 500m Distance to Shore</p>
+                                <p className='mb-1 text-[#565656] font-semibold flex gap-3'><BsCup className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    Breakfast Included</p>
+                                <p className='text-[#565656] font-semibold mb-9 flex gap-3'><IoPersonOutline className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    1 Adult,   2 Children <LuClock className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    4 Nights </p>
                                 <p>Experience Unique Opportunity </p>
                                 <p className='text-[#565656] font-semibold'>Standard rooms </p>
-                                <p className='text-[#000000] font-bold text-xl'>Very Good <span className='text-[#565656] text-sm	 font-semibold'>, 2.259 Reviews</span></p>
+                                <p className='text-[#000000] font-bold text-lg flex gap-3'>Very Good<span className='text-[#565656] text-sm	mt-[8px] font-semibold'>, 2.259 Reviews</span><IoIosArrowDown className='mt-[8px] text-xl text-[#565656] font-bold' />
+                                </p>
 
                             </div>
 
                         </div>
                         {/* 2nd 2 part */}
-                        <div className='p-5 mt-3 lg:mt-24'>
+                        <div className='p-5 mt-3 xl:mt-24'>
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>12% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
-                            <p className='text-[#4C9839]'>trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E]'>We Have 8 Left at 12% off</p>
-                            <p className='text-[#07689F] text-xl font-bold'>See Availability </p>
+                            <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
+                                trip Sustainable Level, 5</p>
+                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                                We Have 8 Left at 12% off</p>
+                            <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
+                            </p>
 
                         </div>
 
 
                     </div>
-                    <div className='flex-none lg:flex gap-60 bg-[#FFFFFF] h-[550px] lg:h-[350px] mb-9'>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
                         {/* 2nd 1 part */}
-                        <div className='flex gap-8 p-5'>
+                        <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
                             <div
-                                className="hero bg-[url(/assets/images/search-result/hotel-5.jpg)] w-[220px] h-[270px]"
+                                className="hero relative bg-[url(/assets/images/search-result/hotel-5.jpg)] w-[220px] h-[270px]"
                             >
 
                                 <div className="hero-content mt-[180px] text-neutral-content">
-                                    <div className='mr-44' style={{ width: '50px', height: '50px' }}  >
+                                    <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='border-white outline-rose-50'>
-                                            <p className='text-[#FFFFFF] mt-52 ml-40'>8,2</p>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                            <div className='flex text-[#FFFFFF] text-2xl '>
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+                                                <TbSunLow />
+
+                                            </div>
+
+                                            
+                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+                                               
+                                            
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             {/* //text */}
-                            <div>
+                            <div className='mt-5'>
                                 <p className='text-[#000000] font-bold text-2xl mb-2'>Radisson Blu</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Located In Downton, 500m Distance to Shore</p>
-                                <p className='mb-1 text-[#565656] font-semibold'>Breakfast Included</p>
-                                <p className='text-[#565656] font-semibold mb-5'>1 Adult,2 Children 4 Nights </p>
+                                <p className='mb-1 text-[#565656]  font-semibold flex gap-3 sm:w-[400px] '><CiLocationOn className='mt-[2px]  text-lg text-[#565656] font-bold ' />
+                                    Located In Downton, 500m Distance to Shore</p>
+                                <p className='mb-1 text-[#565656] font-semibold flex gap-3'><BsCup className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    Breakfast Included</p>
+                                <p className='text-[#565656] font-semibold mb-9 flex gap-3'><IoPersonOutline className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    1 Adult,   2 Children <LuClock className='mt-[2px] text-xl text-[#565656] font-bold' />
+                                    4 Nights </p>
                                 <p>Experience Unique Opportunity </p>
                                 <p className='text-[#565656] font-semibold'>Standard rooms </p>
-                                <p className='text-[#000000] font-bold text-xl'>Very Good <span className='text-[#565656] text-sm	 font-semibold'>, 2.259 Reviews</span></p>
+                                <p className='text-[#000000] font-bold text-lg flex gap-3'>Very Good<span className='text-[#565656] text-sm	mt-[8px] font-semibold'>, 2.259 Reviews</span><IoIosArrowDown className='mt-[8px] text-xl text-[#565656] font-bold' />
+                                </p>
 
                             </div>
 
                         </div>
                         {/* 2nd 2 part */}
-                        <div className='p-5 mt-3 lg:mt-24'>
+                        <div className='p-5 mt-3 xl:mt-24'>
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>12% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
-                            <p className='text-[#4C9839]'>trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E]'>We Have 8 Left at 12% off</p>
-                            <p className='text-[#07689F] text-xl font-bold'>See Availability </p>
+                            <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
+                                trip Sustainable Level, 5</p>
+                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                                We Have 8 Left at 12% off</p>
+                            <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
+                            </p>
 
                         </div>
 
 
                     </div>
-                    <div className='flex-none  lg:flex '>
+
+                   
+                    
+                    
+
+                    <div className='flex-none relative  lg:flex '>
 
 
                         <Link href={'/faviourites'}>
-                            <button className='text-[#07689F] ml-3 lg:ml-0 border-[#07689F] btn btn-outline hover:btn-primary'>
+                            <button className='text-[#07689F] max-w-[250] ml-3 lg:ml-0 border-[#07689F] btn btn-outline hover:btn-primary'>
                                 <div className='flex gap-2'>
                                     <span className='mt-1'>List your Favourite Places</span>
                                     <GrFavorite className='h-[22px] w-[22px] rounded-full' />
@@ -569,7 +710,7 @@ const page = () => {
                             </button>
                         </Link>
 
-                        <button className='ml-6 lg:ml-[700px] btn btn-primary'>See More Search Results</button>
+                        <button className='ml-6 mt-3 md:mt-0 md:absolute md:right-[280] lg:absolute lg:right-2  btn btn-primary'>See More Search Results</button>
                     </div>
 
 
