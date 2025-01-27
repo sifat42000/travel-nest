@@ -27,7 +27,7 @@ const Nav = () => {
                     />
                     {/* Search Icon */}
                     <IoSearch
-                        className="absolute xl:right-20 2xl:right-[210px] text-2xl top-1/2 transform -translate-y-1/2 text-gray-500"
+                        className="absolute xl:right-20 2xl:right-[190px] text-2xl top-1/2 transform -translate-y-1/2 text-gray-500"
                         size={20} // Adjust icon size here
                     />
                 </div>
