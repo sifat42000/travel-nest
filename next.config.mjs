@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    eslint: {
-        ignoreDuringBuilds: true,
+    experimental: {
+      fontLoaders: [
+        { loader: '@next/font/google', options: { subsets: ['latin'] } },
+      ],
     },
-
-};
+  };
 
 export default nextConfig;
