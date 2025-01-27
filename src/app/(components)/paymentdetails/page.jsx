@@ -200,7 +200,7 @@ const page = () => {
                         <p className='text-[#000000] mb-12'>Cancel /Rebook No Later Than 24 Hours Before, Otherwise You Pay 80% Of The Cost.</p>
                         <div className='  relative'>
                             <p className='text-2xl mb-4 text-[#000000] font-bold'>Pay part now, part later</p>
-                            <button className='rounded-full text-xl absolute right-1 md:right-2 top-2'> <IoMdRadioButtonOff onClick={() => setButton(!isButton)} className={`${isButton ? "bg-[#07689F]" : "bg-white"} text-[#07689F] border border-3 border-[#07689F] rounded-full`} /></button>
+                            <button className='rounded-full  text-xl hidden sm:block absolute right-1 md:right-2 top-2'> <IoMdRadioButtonOff onClick={() => setButton(!isButton)} className={`${isButton ? "bg-[#07689F]" : "bg-white"} text-[#07689F] border border-3 border-[#07689F] rounded-full`} /></button>
                         </div>
                         <p>Pay $ 200 now, and the rest ($6,60) will be automatically charged to the same payment method on August 27, 2023. No extra fees.</p>
                     </div>
@@ -222,7 +222,7 @@ const page = () => {
                             </div>
                             <div className='flex gap-5'>
                                 <p className='font-bold text-xl text-[#000000]'>Booking For Work </p>
-                                <button className='rounded-full text-xl -mt-6'> <IoMdRadioButtonOff onClick={() => setButton(!isButton)} className={`${isButton ? "bg-[#07689F]" : "bg-white"} text-[#07689F] border border-3 border-black rounded-full`} /></button>
+                                <button className='rounded-full  text-xl -mt-6'> <IoMdRadioButtonOff onClick={() => setButton(!isButton)} className={`${isButton ? "bg-[#07689F]" : "bg-white"} text-[#07689F] border border-3 border-black rounded-full`} /></button>
                             </div>
 
 

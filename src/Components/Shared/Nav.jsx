@@ -34,7 +34,7 @@ const Nav = () => {
 
                 {/* Icons + Avatar + Name */}
                 <div className="flex items-center space-x-5 flex-shrink-0">
-                    <div className="avatar">
+                    <div className="avatar hidden sm:block">
                         <div className="w-6 rounded-full">
                             <img src="/assets/images/avatars/fc71449c73829a67d58b01b72b310b30.png" />
                         </div>

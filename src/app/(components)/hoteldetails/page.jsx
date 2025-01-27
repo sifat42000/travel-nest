@@ -126,10 +126,15 @@ const page = () => {
 
 
             {/* 4th part */}
+            
             <div className='px-2 max-w-[1270px] mx-auto'>
-  <div className='mt-36 grid lg:grid-cols-3 2xl:grid-cols-5 lg:gap-2 2xl:gap-4'>
-    {/* Reviews */}
-    {['p-1', 'p-2', 'p-3', 'p-5', 'p-4'].map((image, index) => (
+            <div className='mt-36 grid lg:grid-cols-3 2xl:grid-cols-5 lg:gap-2 2xl:gap-4'>
+  {/* Reviews */}
+  {['p-1', 'p-2', 'p-3', 'p-5', 'p-4'].map((image, index) => {
+    // Names array
+    const names = ['Sofia', 'Sebastian', 'Maria', 'Lena', 'Martin'];
+
+    return (
       <div className='relative w-full lg:w-[240px] mb-8' key={index}>
         <div className='flex justify-center'>
           <div className="avatar mt-3 mb-[-25px] lg:mb-[-30px]">
@@ -149,13 +154,14 @@ const page = () => {
             <div className="flex gap-3">
               {/* Map the dynamic c-image here */}
               <Image
-                alt={`c-1`}
-                height={14}
+                className='h-5 w-7 mt-1'
+                alt={`picc`}
+                height={7}
                 width={24}
-                src={`/assets/images/hotel-details/c-1.png`}
+                src={`/assets/images/hotel-details/C-${index + 1}.png`}
               />
               {/* Title */}
-              <p className="text-xl text-black">Sofia</p>
+              <p className="text-xl text-black">{names[index]}</p>
             </div>
             {/* Description */}
             <p className="text-sm">
@@ -167,9 +173,12 @@ const page = () => {
           </div>
         </div>
       </div>
-    ))}
-  </div>
+    );
+  })}
 </div>
+
+            </div>
+
 
 
 

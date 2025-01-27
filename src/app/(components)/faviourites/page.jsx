@@ -26,7 +26,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[205] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -84,7 +84,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[205] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -142,7 +142,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[205] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -200,7 +200,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[205] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -258,7 +258,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[205] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />

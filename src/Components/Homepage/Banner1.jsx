@@ -39,7 +39,7 @@ const Banner1 = () => {
             </div>
 
             {/* Buttons */}
-            <div className="absolute bottom-0 left-0  flex flex-wrap justify-center lg:justify-start lg:gap-1 lg:absolute lg:left-[253px] lg:bottom-0">
+            <div className=" flex max-w-[1395px] absolute bottom-0  flex-wrap justify-center lg:justify-start lg:gap-1">
                 {buttons.map((btn) => (
                     <button
                         key={btn.id}
