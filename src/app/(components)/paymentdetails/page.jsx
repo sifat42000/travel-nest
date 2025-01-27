@@ -68,7 +68,7 @@ const page = () => {
                         </div>
                         <p className='mt-10 mb-4 flex gap-2 text-xl font-bold'><ImLocation className='mt-1 text-[#07689F]' /> Location Information</p>
 
-                        <ul class="list-disc pl-5 mb-8">
+                        <ul className="list-disc pl-5 mb-8">
                             <li className="mb-2">0 m to City Centre
                             </li>
                             <li className="mb-2">24 km to Landvetter Airport
