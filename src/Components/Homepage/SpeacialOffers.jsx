@@ -4,7 +4,7 @@ import { IoMdArrowRoundForward } from 'react-icons/io';
 const SpeacialOffers = () => {
     return (
         <div>
-            <div className="container  mx-auto px-4  sm:max-w-[370]  md:max-w-[730]  lg:max-w-[1345]">
+            <div className="container  mx-auto px-4  sm:max-w-[370px]  md:max-w-[730px]  lg:max-w-[1345px]">
                 <p className="text-3xl text-black font-bold mb-6">Special Offers</p>
 
                 <div className=" sm:flex-none px-0 md:flex lg:flex flex-wrap gap-y-3 gap-x-3 gap-4">

@@ -12,25 +12,25 @@ import { MdBedroomParent } from "react-icons/md";
 import { BsCupHot } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { GrFavorite } from "react-icons/gr";
-import { IoIosArrowBack } from "react-icons/io";
+
 import Link from 'next/link';
 
 const page = () => {
     return (
         <div className='container  mx-auto mb-72'>
             {/* Room pictures */}
-            <div className='flex-none container mx-auto lg:flex p-3 lg:p-0  gap-3 mb-20  max-w-[1230]'>
+            <div className='flex-none container mx-auto lg:flex p-3 lg:p-0  gap-3 mb-20  max-w-[1230px]'>
                 {/* left side pic */}
                 <div className='w-full lg:max-w-[601px] mb-3 lg:md-0'>
                     <Image className='h-[558px] w-full' alt='room-1' height={558} width={601} src={'/assets/images/hotel-details/room-1.jpg'} />
                 </div>
                 {/* right side pics */}
                 <div className='grid grid-cols-2 gap-3  '>
-                    <Image className='w-[300] h-[247px]' alt='room-2' height={247} width={294} src={'/assets/images/hotel-details/room-2.jpg'} />
-                    <Image className='w-[300] h-[247px]' alt='room-3' height={247} width={294} src={'/assets/images/hotel-details/room-3.jpg'} />
-                    <Image className='w-[300] h-[300px]' alt='room-4' height={250} width={294} src={'/assets/images/hotel-details/room-4.jpg'} />
+                    <Image className='w-[300px] h-[247px]' alt='room-2' height={247} width={294} src={'/assets/images/hotel-details/room-2.jpg'} />
+                    <Image className='w-[300px] h-[247px]' alt='room-3' height={247} width={294} src={'/assets/images/hotel-details/room-3.jpg'} />
+                    <Image className='w-[300px] h-[300px]' alt='room-4' height={250} width={294} src={'/assets/images/hotel-details/room-4.jpg'} />
                     <div
-                        className="hero relative bg-[url(/assets/images/hotel-details/room-5.jpg)] max-w-[300] max-h-[300px]"
+                        className="hero relative bg-[url(/assets/images/hotel-details/room-5.jpg)] max-w-[300px] max-h-[300px]"
                     >
                         <div className="hero-overlay bg-opacity-40"></div>
                         <div className="hero-content text-neutral-content">
@@ -81,7 +81,7 @@ const page = () => {
 
                             <div className='sm:flex-none md:flex  '>
                                 <div >
-                                    <p className='text-black w-[400]  font-bold'>2 Adults ,3 Children ,4 Nights | <span className='text-sm  font-none '>Two Rooms ,Double Bed</span></p>
+                                    <p className='text-black w-[400px]  font-bold'>2 Adults ,3 Children ,4 Nights | <span className='text-sm  font-none '>Two Rooms ,Double Bed</span></p>
                                     <p className='flex gap-2 mt-5'><FaLocationDot className='text-[#07689F] mt-1' /> Lärkvägen 22, Stockholm, Sweden</p>
                                 </div>
 
@@ -105,7 +105,7 @@ const page = () => {
             </div>
 
             {/* 3rd part */}
-            <div className='mt-14  px-2 mx-auto max-w-[1230]'>
+            <div className='mt-14  px-2 mx-auto max-w-[1230px]'>
                 <p className='text-xl font-bold ml-7 lg:ml-0 text-black mb-6'>The Most Frequented Questions Asked by Travellers</p>
                 <div className='w-full lg:max-w-[1224px] max-h-[485px] bg-white'>
                     <div className=''>
@@ -188,7 +188,7 @@ const page = () => {
             {/* 5th part */}
             <div className='mt-8  w-full  mx-auto max-w-[1160px] px-4'>
                 <p className='font-bold text-black text-2xl mb-6'>Review Rates:</p>
-                <div className='grid grid-cols-2 lg:grid-cols-5 gap-20 max-w-[1100]'>
+                <div className='grid grid-cols-2 lg:grid-cols-5 gap-20 max-w-[1100px]'>
                     {['Staff Politeness', 'VIP Options', 'Free Wi-Fi Speed', 'Cleanliness', 'Access to City '].map((item, index) => (
                         <div key={index} className='w-full lg:w-[350px]'>
                             <p className='text-[#565656] mb-4 text-xl flex gap-8'>{item} <span className='text-[#565656] font-bold text-sm mt-1'>{8 - index * 0.5}</span></p>

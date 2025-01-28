@@ -14,7 +14,7 @@ const page = () => {
 
             <div className='grid md:grid-cols-1 lg:grid-cols-2    2xl:grid-cols-3 gap-5 mx-auto'>
                 {/* 1st card */}
-                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590] md:max-h-[290] lg:max-h-[290]'>
+                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590px] md:max-h-[290px] lg:max-h-[290px]'>
                     <div className=' flex-none md:flex lg:flex gap-8 p-2'>
                         {/* //pic */}
                         <div
@@ -26,7 +26,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188px] md:gap-[69px]  lg:gap-[69px] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -46,15 +46,15 @@ const page = () => {
                             </div>
                         </div>
                         {/* //text */}
-                        <div className='mt-3 max-w-[500] '>
+                        <div className='mt-3 max-w-[500px] '>
                             <p className='text-[#000000] font-bold text-lg mb-2'>Radisson Blu</p>
                             <div className='flex gap-1'>
                             <IoLocationOutline className='mt-1'/>
                             <p className='mb-3 text-[#565656] font-semibold'>Located In Downton</p>
                             </div>
                             <div className='flex gap-2'>
-                                <p className='text-2xl text-[##000000] font-bold '>$125</p>
-                                <p className='text-sm mt-2 text-[#E5062E] '>12% Off</p>
+                                <p className='text-2xl text-[##000000] font-bold '>$140</p>
+                                <p className='text-sm mt-2 text-[#E5062E] '>16% Off</p>
                             </div>
                             <p className='text-[#565656] text-sm mb-2'>Includes taxes and charges</p>
                             <p className='text-[#4C9839] flex gap-2'><IoLeafOutline className='text-xl mt-[2px]' />trip Sustainable Level, 5</p>
@@ -72,7 +72,7 @@ const page = () => {
                     </div>
                 </div>
                 {/* 2nd card */}
-                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590] md:max-h-[290] lg:max-h-[290]'>
+                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590px] md:max-h-[290px] lg:max-h-[290px]'>
                     <div className=' flex-none md:flex lg:flex gap-8 p-2'>
                         {/* //pic */}
                         <div
@@ -84,7 +84,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188px] md:gap-[69px]  lg:gap-[69px] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -104,14 +104,14 @@ const page = () => {
                             </div>
                         </div>
                         {/* //text */}
-                        <div className='mt-3 max-w-[500] '>
+                        <div className='mt-3 max-w-[500px] '>
                             <p className='text-[#000000] font-bold text-lg mb-2'>Radisson Blu</p>
                             <div className='flex gap-1'>
                             <IoLocationOutline className='mt-1'/>
                             <p className='mb-3 text-[#565656] font-semibold'>Located In Downton</p>
                             </div>
                             <div className='flex gap-2'>
-                                <p className='text-2xl text-[##000000] font-bold '>$125</p>
+                                <p className='text-2xl text-[##000000] font-bold '>$135</p>
                                 <p className='text-sm mt-2 text-[#E5062E] '>12% Off</p>
                             </div>
                             <p className='text-[#565656] text-sm mb-2'>Includes taxes and charges</p>
@@ -130,7 +130,7 @@ const page = () => {
                     </div>
                 </div>
                 {/* 3rd card */}
-                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590] md:max-h-[290] lg:max-h-[290]'>
+                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590px] md:max-h-[290px] lg:max-h-[290px]'>
                     <div className=' flex-none md:flex lg:flex gap-8 p-2'>
                         {/* //pic */}
                         <div
@@ -142,7 +142,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188px] md:gap-[69px]  lg:gap-[69px] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -162,14 +162,14 @@ const page = () => {
                             </div>
                         </div>
                         {/* //text */}
-                        <div className='mt-3 max-w-[500] '>
+                        <div className='mt-3 max-w-[500px] '>
                             <p className='text-[#000000] font-bold text-lg mb-2'>Radisson Blu</p>
                             <div className='flex gap-1'>
                             <IoLocationOutline className='mt-1'/>
                             <p className='mb-3 text-[#565656] font-semibold'>Located In Downton</p>
                             </div>
                             <div className='flex gap-2'>
-                                <p className='text-2xl text-[##000000] font-bold '>$125</p>
+                                <p className='text-2xl text-[##000000] font-bold '>$110</p>
                                 <p className='text-sm mt-2 text-[#E5062E] '>12% Off</p>
                             </div>
                             <p className='text-[#565656] text-sm mb-2'>Includes taxes and charges</p>
@@ -188,7 +188,7 @@ const page = () => {
                     </div>
                 </div>
                 {/* 4th card */}
-                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590] md:max-h-[290] lg:max-h-[290]'>
+                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590px] md:max-h-[290px] lg:max-h-[290px]'>
                     <div className=' flex-none md:flex lg:flex gap-8 p-2'>
                         {/* //pic */}
                         <div
@@ -200,7 +200,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188px] md:gap-[69px]  lg:gap-[69px] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -220,14 +220,14 @@ const page = () => {
                             </div>
                         </div>
                         {/* //text */}
-                        <div className='mt-3 max-w-[500] '>
+                        <div className='mt-3 max-w-[500px] '>
                             <p className='text-[#000000] font-bold text-lg mb-2'>Radisson Blu</p>
                             <div className='flex gap-1'>
                             <IoLocationOutline className='mt-1'/>
                             <p className='mb-3 text-[#565656] font-semibold'>Located In Downton</p>
                             </div>
                             <div className='flex gap-2'>
-                                <p className='text-2xl text-[##000000] font-bold '>$125</p>
+                                <p className='text-2xl text-[##000000] font-bold '>$145</p>
                                 <p className='text-sm mt-2 text-[#E5062E] '>12% Off</p>
                             </div>
                             <p className='text-[#565656] text-sm mb-2'>Includes taxes and charges</p>
@@ -246,7 +246,7 @@ const page = () => {
                     </div>
                 </div>
                 {/* 5th card */}
-                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590] md:max-h-[290] lg:max-h-[290]'>
+                <div className='bg-[#FFFFFF]   border border-[#D9D9D9] rounded-lg h-full max-h-[590px] md:max-h-[290px] lg:max-h-[290px]'>
                     <div className=' flex-none md:flex lg:flex gap-8 p-2'>
                         {/* //pic */}
                         <div
@@ -258,7 +258,7 @@ const page = () => {
 
                                     <GrFavorite className="h-[25px] w-[25px] absolute top-3 left-3 inset-0 bg-[#07689F] rounded-full text-white border border-[#000000]" />
 
-                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188] md:gap-[69]  lg:gap-[69] py-2  '>
+                                    <div className='bg-black absolute left-0  md:right-0 lg:right-0 bottom-0 bg-opacity-55 flex gap-[188px] md:gap-[69px]  lg:gap-[69px] py-2  '>
                                         <div className='flex text-[#FFFFFF] text-2xl '>
                                         <TbSunLow />
                                         <TbSunLow />
@@ -278,14 +278,14 @@ const page = () => {
                             </div>
                         </div>
                         {/* //text */}
-                        <div className='mt-3 max-w-[500] '>
+                        <div className='mt-3 max-w-[500px] '>
                             <p className='text-[#000000] font-bold text-lg mb-2'>Radisson Blu</p>
                             <div className='flex gap-1'>
                             <IoLocationOutline className='mt-1'/>
                             <p className='mb-3 text-[#565656] font-semibold'>Located In Downton</p>
                             </div>
                             <div className='flex gap-2'>
-                                <p className='text-2xl text-[##000000] font-bold '>$125</p>
+                                <p className='text-2xl text-[##000000] font-bold '>$160</p>
                                 <p className='text-sm mt-2 text-[#E5062E] '>12% Off</p>
                             </div>
                             <p className='text-[#565656] text-sm mb-2'>Includes taxes and charges</p>

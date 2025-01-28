@@ -11,7 +11,7 @@ import { LuClock } from "react-icons/lu";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { MdErrorOutline } from 'react-icons/md';
 import { TbSunLow } from 'react-icons/tb';
-import { BiLike } from 'react-icons/bi';
+
 
 
 
@@ -49,7 +49,7 @@ const page = () => {
 
             <div className='flex-none lg:flex  pl-3 '>
                 {/* 1st part */}
-                <div className='ml-16 lg:ml-0  w-[600]'>
+                <div className='ml-16 lg:ml-0  w-[600px]'>
                     <p className='text-2xl text-[#565656] font-bold mb-4'>Filter By</p>
                     <p className=' text-[#000000] mb-4'>Your Budget for per night </p>
                     <input className='mb-7'  type="range" min='1' max='100' />
@@ -345,7 +345,7 @@ const page = () => {
                 </div>
                 {/* 2nd part */}
                 <div>
-                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
                    
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
@@ -358,7 +358,7 @@ const page = () => {
                                     <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85px] py-1  '>
                                             <div className='flex text-[#FFFFFF] text-2xl '>
                                                 <TbSunLow />
                                                 <TbSunLow />
@@ -406,7 +406,7 @@ const page = () => {
                             <p className='text-[#565656]'>Includes taxes and charges</p>
                             <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
                                 trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                            <p className='text-[#E5062E] flex gap-3 w-[230px]'><MdErrorOutline className='text-xl mt-[2px]' />
                                 We Have 8 Left at 12% off</p>
                             <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
                             </p>
@@ -415,12 +415,8 @@ const page = () => {
 
 
                     </div>
-                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180] relative  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
-                    <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
-                            
-                            <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
-                             Vip Gifts
-                            </p>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
+                   
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -432,7 +428,7 @@ const page = () => {
                                     <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85px] py-1  '>
                                             <div className='flex text-[#FFFFFF] text-2xl '>
                                                 <TbSunLow />
                                                 <TbSunLow />
@@ -471,14 +467,16 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
+                           
+                            
                             <div className='flex gap-10'>
-                                <p className='text-xl text-[#E5062E] '>12% Off</p>
-                                <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
+                                <p className='text-xl text-[#E5062E] '>10% Off</p>
+                                <p className='text-2xl text-[#4C9839] font-bold '>$130</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
                             <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
                                 trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                            <p className='text-[#E5062E] flex gap-3 w-[230px]'><MdErrorOutline className='text-xl mt-[2px]' />
                                 We Have 8 Left at 12% off</p>
                             <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
                             </p>
@@ -487,7 +485,8 @@ const page = () => {
 
 
                     </div>
-                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
+                   
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -499,7 +498,7 @@ const page = () => {
                                     <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85px] py-1  '>
                                             <div className='flex text-[#FFFFFF] text-2xl '>
                                                 <TbSunLow />
                                                 <TbSunLow />
@@ -538,14 +537,16 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
+                           
+                            
                             <div className='flex gap-10'>
-                                <p className='text-xl text-[#E5062E] '>12% Off</p>
-                                <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
+                                <p className='text-xl text-[#E5062E] '>8% Off</p>
+                                <p className='text-2xl text-[#4C9839] font-bold '>$145</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
                             <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
                                 trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                            <p className='text-[#E5062E] flex gap-3 w-[230px]'><MdErrorOutline className='text-xl mt-[2px]' />
                                 We Have 8 Left at 12% off</p>
                             <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
                             </p>
@@ -554,12 +555,8 @@ const page = () => {
 
 
                     </div>
-                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180] relative  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
-                    <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
-                            
-                            <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
-                             Vip Gifts
-                            </p>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
+                   
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -571,7 +568,7 @@ const page = () => {
                                     <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85px] py-1  '>
                                             <div className='flex text-[#FFFFFF] text-2xl '>
                                                 <TbSunLow />
                                                 <TbSunLow />
@@ -610,14 +607,16 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
+                           
+                            
                             <div className='flex gap-10'>
-                                <p className='text-xl text-[#E5062E] '>12% Off</p>
-                                <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
+                                <p className='text-xl text-[#E5062E] '>4% Off</p>
+                                <p className='text-2xl text-[#4C9839] font-bold '>$150</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
                             <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
                                 trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                            <p className='text-[#E5062E] flex gap-3 w-[230px]'><MdErrorOutline className='text-xl mt-[2px]' />
                                 We Have 8 Left at 12% off</p>
                             <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
                             </p>
@@ -626,7 +625,8 @@ const page = () => {
 
 
                     </div>
-                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680] xl:max-w-[1080] 2xl:max-w-[1180]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 '>
+                    <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
+                   
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -638,7 +638,7 @@ const page = () => {
                                     <div className='mr-44 w-[50px] h-[50px]'  >
 
                                         <GrFavorite className='h-[25px] w-[25px] -mt-48  inset-0   bg-black bg-opacity-30 rounded-full' />
-                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85] py-1  '>
+                                        <div className='px-2 bg-black absolute bottom-0  left-0  bg-opacity-40 flex gap-[85px] py-1  '>
                                             <div className='flex text-[#FFFFFF] text-2xl '>
                                                 <TbSunLow />
                                                 <TbSunLow />
@@ -677,14 +677,16 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
+                           
+                            
                             <div className='flex gap-10'>
-                                <p className='text-xl text-[#E5062E] '>12% Off</p>
-                                <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
+                                <p className='text-xl text-[#E5062E] '>30% Off</p>
+                                <p className='text-2xl text-[#4C9839] font-bold '>$218</p>
                             </div>
                             <p className='text-[#565656]'>Includes taxes and charges</p>
                             <p className='text-[#4C9839] flex gap-3'><IoLeafOutline className='text-xl mt-[2px]' />
                                 trip Sustainable Level, 5</p>
-                            <p className='text-[#E5062E] flex gap-3 w-[230]'><MdErrorOutline className='text-xl mt-[2px]' />
+                            <p className='text-[#E5062E] flex gap-3 w-[230px]'><MdErrorOutline className='text-xl mt-[2px]' />
                                 We Have 8 Left at 12% off</p>
                             <p className='text-[#07689F] text-xl font-bold flex gap-3'>See Availability <IoIosArrowForward className='text-xl mt-[7px]' />
                             </p>
@@ -693,6 +695,7 @@ const page = () => {
 
 
                     </div>
+                   
 
                    
                     
@@ -702,7 +705,7 @@ const page = () => {
 
 
                         <Link href={'/faviourites'}>
-                            <button className='text-[#07689F] max-w-[250] ml-3 lg:ml-0 border-[#07689F] btn btn-outline hover:btn-primary'>
+                            <button className='text-[#07689F] max-w-[250px] ml-3 lg:ml-0 border-[#07689F] btn btn-outline hover:btn-primary'>
                                 <div className='flex gap-2'>
                                     <span className='mt-1'>List your Favourite Places</span>
                                     <GrFavorite className='h-[22px] w-[22px] rounded-full' />
@@ -710,7 +713,7 @@ const page = () => {
                             </button>
                         </Link>
 
-                        <button className='ml-6 mt-3 md:mt-0 md:absolute md:right-[280] lg:absolute lg:right-2  btn btn-primary'>See More Search Results</button>
+                        <button className='ml-6 mt-3 md:mt-0 md:absolute md:right-[280px] lg:absolute lg:right-2  btn btn-primary'>See More Search Results</button>
                     </div>
 
 

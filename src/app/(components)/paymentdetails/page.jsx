@@ -37,7 +37,7 @@ const page = () => {
     const [isButton, setButton] = useState(false)
     const [isSecondButton, setIsSecondButton] = useState(false)
     return (
-        <div className='container  w-full  max-w-[1410] flex flex-wrap gap-24 mx-auto mb-20'>
+        <div className='container  w-full  max-w-[1410px] flex flex-wrap gap-24 mx-auto mb-20'>
             {/* left side */}
             <div className='sm:ml-[91px]  md:ml-[180px] xl:ml-[270px] 2xl:ml-0 pl-2 lg:pl-0'>
                 {/* first part */}
@@ -59,7 +59,7 @@ const page = () => {
                                 <p className='font-semibold flex gap-2'>More than 4,325 Review  <IoIosArrowDown className='mt-[6px]' /></p>
                                 <p className='text-[#07689F] font-bold rounded-md w-7 border border-[#07689F]'>9,2</p>
                             </div>
-                            <div className="w-[250] md:w-[290px] h-[5px] bg-[#A6A6A6] rounded-full relative overflow-hidden">
+                            <div className="w-[250px] md:w-[290px] h-[5px] bg-[#A6A6A6] rounded-full relative overflow-hidden">
                                 <div
                                     className="h-full w-[80%] bg-[#07689F] rounded-full"
 
@@ -96,7 +96,7 @@ const page = () => {
                 </div>
 
                 {/* second part */}
-                <div className='mt-10 bg-[#FFFFFF] w-[330px] md:w-[480px] xl:w-[870px] 2xl:w-[580px] h-[430] md:h-[370]'>
+                <div className='mt-10 bg-[#FFFFFF] w-[330px] md:w-[480px] xl:w-[870px] 2xl:w-[580px] h-[430px] md:h-[370px]'>
                     <div className='p-7'>
                         <p className='text-[#000000] text-xl font-bold '>Your Booking Deteiels</p>
                         <div className='flex gap-36 mt-12 mb-12'>
@@ -256,14 +256,14 @@ const page = () => {
                                     <p>easyset24@gmail.com</p>
                                 </div>
                             </div>
-                            <div className='border border-[#07689F] h-[80] md:h-[48px] max-w-[350px] rounded-lg'>
+                            <div className='border border-[#07689F] h-[80px] md:h-[48px] max-w-[350px] rounded-lg'>
                                 <p className='text-xl text-center mt-2 text-[#07689F] flex gap-2 ml-3'>Check Your Booking History <IoIosArrowForward className='mt-1 text-[#333333]' />
                                 </p>
                             </div>
 
                         </div>
-                        <div className='lg:flex gap-3   mb-9  w-[700]'>
-                            <p className='text-lg mb-2 md:mb-0 w-[260] font-bold text-[#000000]'>Who are you booking for?</p>
+                        <div className='lg:flex gap-3   mb-9  w-[700px]'>
+                            <p className='text-lg mb-2 md:mb-0 w-[260px] font-bold text-[#000000]'>Who are you booking for?</p>
                             <div className='flex gap-2 mb-2 md:mb-0'>
                                 <button className='rounded-full text-sm '> <IoMdRadioButtonOff onClick={() => setButton(!isButton)} className={`${isButton ? "bg-[#07689F]" : "bg-white"} text-[#07689F] text-2xl border border-3 border-black -mt-2 rounded-full`} /></button>
                                 <p className='text-sm'>I am the main guest </p>
@@ -367,7 +367,7 @@ const page = () => {
                     <div className='p-5'>
                         <p className='text-3xl font-bold text-[#000000] mb-11'>Add to your stay</p>
                         <div className='flex gap-5 mb-5'>
-                            <input type="checkbox" className="h-[25] w-[25] mt-[2px] border border-[#333333]" />
+                            <input type="checkbox" className="h-[25px] w-[25px] mt-[2px] border border-[#333333]" />
                             <p className='text-xl font-semibold text-[#000000]'>I will need a flight for my trip</p>
                         </div>
                         <p className='flex gap-2 mb-2'><MdFlight className='mt-1' />
@@ -376,7 +376,7 @@ const page = () => {
                         <p className='w-[280px] md:w-[440px] lg:w-[660px]  text-lg mb-2'>Flexible flight options from Stockholm to Turkiye from SLK 766/round trip. Fnnish booking </p>
                         <p className='w-[280px] md:w-[440px] lg:w-[581px] text-lg mb-9'>this stay to get flight recommendations that match your selected dates.</p>
                         <div className='flex gap-5 mb-9'>
-                            <input type="checkbox" className="h-[25] w-[25] mt-[2px] border border-[#333333]" />
+                            <input type="checkbox" className="h-[25px] w-[25px] mt-[2px] border border-[#333333]" />
                             <p className='text-xl font-semibold text-[#000000]'>Want to book a taxi or shuttle ride in advance?</p>
                         </div>
                         <p className='flex gap-2 mb-2'><FaCarOn className='mt-1' />
@@ -392,7 +392,7 @@ const page = () => {
                         <p className='text-[#000000] '>(optional)</p> <br />
                         <input className='w-[280px] md:w-[430px] lg:w-[613px] mb-6 h-[106px] border border-[#A6A6A6]' />
                         <div className='flex gap-3 mb-9'>
-                            <input type="checkbox" className="h-[25]  w-[25] mt-[2px] border border-[#333333]" />
+                            <input type="checkbox" className="h-[25px]  w-[25px] mt-[2px] border border-[#333333]" />
                             <p className='text-lg  text-[#000000]'>I would like rooms close to each other</p>
                         </div>
                         <p className='text-xl font-bold mb-7 text-[#000000]'>Your Arrival Time</p>

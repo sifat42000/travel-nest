@@ -9,18 +9,18 @@ import { MdCopyright, MdLocalPhone } from 'react-icons/md';
 const Footer = () => {
     return (
         <footer className=' mt-[80px]'>
-            <div className='container mx-auto max-w-[1570] '>
+            <div className='container mx-auto max-w-[1570px] '>
                 <div className='lg:flex gap-[650px] ml-3 lg:ml-6 '>
                     {/* 1st */}
                     <div>
                         <p className='text-[#07689F] mb-3 font-bold text-xl'>Go Further With The EasySet24 App</p>
-                        <p className='text-[#000000] mb-2 max-w-[350] md:max-w-[712]'>Enjoy savings on chosen hotels and flights when you book through the EasySet24 website.<br /> Additionally, earn One Key Cash for every booking made through the app.</p>
+                        <p className='text-[#000000] mb-2 max-w-[350px] md:max-w-[712px]'>Enjoy savings on chosen hotels and flights when you book through the EasySet24 website.<br /> Additionally, earn One Key Cash for every booking made through the app.</p>
                         <p className='text-[#565656]'>Secured By Europe GTP</p>
                         <p></p>
 
                     </div>
                     {/* 2nd */}
-                    <div className='grid grid-cols-2 gap-4 mt-4 lg:mt-0 max-w-[250]'>
+                    <div className='grid grid-cols-2 gap-4 mt-4 lg:mt-0 max-w-[250px]'>
                         <Image alt='pic1' height={40} width={120} src={'/assets/images/footer/appstore.gif'} />
                         <Image alt='pic1' height={41} width={40} src={'/assets/images/footer/QR Code.png'} />
                         <Image alt='pic1' height={40} width={120} src={'/assets/images/footer/play.gif'} />
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className='mt-4' />
-            <div className="footer container mx-auto max-w-[1570]  p-10">
+            <div className="footer container mx-auto max-w-[1570px]  p-10">
 
                 <nav>
                     <h6 className="font-bold text-[#000000]">About Us</h6>
@@ -72,7 +72,7 @@ const Footer = () => {
                     <a className="link link-hover">Travel insurance</a>
                 </nav>
             </div>
-            <div className='container mx-auto max-w-[1570]'>
+            <div className='container mx-auto max-w-[1570px]'>
                 <div className='lg:flex justify-between ml-5 lg:ml-0 '>
                     {/* pic */}
                     <div className='flex-none md:flex gap-3'>
@@ -105,7 +105,7 @@ const Footer = () => {
 
                                 </span>
                                 <input
-                                    className="h-[48px] w-[250] md:w-[321px] border border-[#565656] pl-[30px]"
+                                    className="h-[48px] w-[250px] md:w-[321px] border border-[#565656] pl-[30px]"
                                     placeholder="enter your email"
                                 />
                             </div>
@@ -125,7 +125,7 @@ const Footer = () => {
 
 
             <div className=" bg-[#D9D9D9]  ">
-                <div className=' lg:flex justify-between h-[200] md:h-[160px] max-w-[1890] px-24 text-center lg:h-[64px] ml-3 lg:ml-0'>
+                <div className=' lg:flex justify-between h-[200px] md:h-[160px] max-w-[1890px] px-24 text-center lg:h-[64px] ml-3 lg:ml-0'>
                     <div className="flex items-center mt-2 lg:mt-0">
                         <MdCopyright className="text-[#07689F] mt-1 " />
                         <p className="text-[#565656] text-sm">Copyright EasySet24</p>
