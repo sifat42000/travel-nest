@@ -2,22 +2,22 @@ import React from 'react';
 
 const Cards = () => {
     return (
-        <div className="mt-20 px-4 lg:px-0 container mx-auto  max-w-[1202]">
+        <div className="mt-20 px-4 lg:px-0 container mx-auto max-w-[1202px]">
             {/* Grid container for cards */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-3 gap-x-3">
                 {/* 1st card */}
                 <div className="hero bg-[url('/assets/images/carts/cart-1.jpg')] h-[346px] max-w-[600px] relative">
                     <div className="hero-overlay bg-opacity-30"></div>
-                    <div className="hero-content absolute bottom-0 left-0 p-4 ">
+                    <div className="hero-content absolute bottom-0 left-0 p-4">
                         <p className="text-xl text-white font-bold">
                             Reserve Your Hotel, Pursue Your Team
                         </p>
                     </div>
                 </div>
                 {/* 2nd card */}
-                <div className="hero bg-[url('/assets/images/carts/cart-2.jpg')] h-[346px] max-w-[600] relative">
+                <div className="hero bg-[url('/assets/images/carts/cart-2.jpg')] h-[346px] max-w-[600px] relative">
                     <div className="hero-overlay bg-opacity-30"></div>
-                    <div className="hero-content absolute bottom-0 left-0 p-4 ">
+                    <div className="hero-content absolute bottom-0 left-0 p-4">
                         <p className="text-xl text-white font-bold">
                             Subscribe Our Newsletter
                         </p>
