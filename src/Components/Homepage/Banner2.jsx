@@ -26,11 +26,12 @@ const Banner2 = () => {
               left: card.left,
             }}
           >
-            <Image className='absolute top-[-10] left-[-6] w-[70] h-[60]' src={`/assets/images/banner-2/banner-6.png`} alt='pic' height={55} width={55} />
+            <Image className='absolute top-[-10px] left-[-6px] w-[70px] h-[60px]' src={`/assets/images/banner-2/banner-6.png`} alt='pic' height={55} width={55} />
 
             <p className="text-[#EFEFEF] font-light opacity-80 absolute top-[8px] left-[-1px] [font-size:0.5rem] rotate-[-40deg]">
-  Best Deals
-</p>
+              Best Deals
+            </p>
+
 
             {/* ইমেজ */}
             <Image
