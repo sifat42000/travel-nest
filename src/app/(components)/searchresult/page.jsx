@@ -19,7 +19,7 @@ import { TbSunLow } from 'react-icons/tb';
 
 
 const page = () => {
-    
+
     return (
         <div className='container w-full mx-auto mb-6 relative '>
             <Search />
@@ -52,8 +52,8 @@ const page = () => {
                 <div className='ml-16 lg:ml-0  w-[600px]'>
                     <p className='text-2xl text-[#565656] font-bold mb-4'>Filter By</p>
                     <p className=' text-[#000000] mb-4'>Your Budget for per night </p>
-                    <input className='mb-7'  type="range" min='1' max='100' />
-                    
+                    <input className='mb-7' type="range" min='1' max='100' />
+
                     <div className='flex gap-3 mb-5'>
                         <input placeholder='Min Price $' className='h-[40px] w-[105px] outline-none p-3' />
                         <input placeholder='Min Price $' className='h-[40px] w-[105px] outline-none p-3' />
@@ -346,7 +346,8 @@ const page = () => {
                 {/* 2nd part */}
                 <div>
                     <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
-                   
+
+
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -367,10 +368,10 @@ const page = () => {
 
                                             </div>
 
-                                            
-                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
-                                               
-                                            
+
+                                            <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+
+
 
                                         </div>
 
@@ -397,8 +398,8 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
-                           
-                            
+
+
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>12% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$125</p>
@@ -416,7 +417,12 @@ const page = () => {
 
                     </div>
                     <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
-                   
+                        <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
+
+                        <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
+                            Vip Gifts
+                        </p>
+
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -437,10 +443,10 @@ const page = () => {
 
                                             </div>
 
-                                            
-                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
-                                               
-                                            
+
+                                            <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+
+
 
                                         </div>
 
@@ -467,8 +473,8 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
-                           
-                            
+
+
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>10% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$130</p>
@@ -486,7 +492,7 @@ const page = () => {
 
                     </div>
                     <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
-                   
+
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -507,10 +513,10 @@ const page = () => {
 
                                             </div>
 
-                                            
-                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
-                                               
-                                            
+
+                                            <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+
+
 
                                         </div>
 
@@ -537,8 +543,8 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
-                           
-                            
+
+
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>8% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$145</p>
@@ -556,7 +562,12 @@ const page = () => {
 
                     </div>
                     <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
-                   
+                        <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
+
+                        <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
+                            Vip Gifts
+                        </p>
+
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -577,10 +588,10 @@ const page = () => {
 
                                             </div>
 
-                                            
-                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
-                                               
-                                            
+
+                                            <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+
+
 
                                         </div>
 
@@ -607,8 +618,8 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
-                           
-                            
+
+
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>4% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$150</p>
@@ -626,7 +637,7 @@ const page = () => {
 
                     </div>
                     <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
-                   
+
                         {/* 2nd 1 part */}
                         <div className='flex-none lg:flex gap-8 p-3'>
                             {/* //pic */}
@@ -647,10 +658,10 @@ const page = () => {
 
                                             </div>
 
-                                            
-                                                <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
-                                               
-                                            
+
+                                            <p className='text-[#FFFFFF] border border-white rounded first: '>8,2</p>
+
+
 
                                         </div>
 
@@ -677,8 +688,8 @@ const page = () => {
                         </div>
                         {/* 2nd 2 part */}
                         <div className='p-5 mt-3 xl:mt-24'>
-                           
-                            
+
+
                             <div className='flex gap-10'>
                                 <p className='text-xl text-[#E5062E] '>30% Off</p>
                                 <p className='text-2xl text-[#4C9839] font-bold '>$218</p>
@@ -695,11 +706,11 @@ const page = () => {
 
 
                     </div>
-                   
 
-                   
-                    
-                    
+
+
+
+
 
                     <div className='flex-none relative  lg:flex '>
 
