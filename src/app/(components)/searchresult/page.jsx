@@ -562,7 +562,7 @@ const page = () => {
 
                     </div>
                     <div className='sm:flex-none ml-6 md:ml-0 xl:flex max-w-[290] sm:max-w-[480] lg:max-w-[680px] xl:max-w-[1080px] 2xl:max-w-[1180px]  xl:gap-16 2xl:gap-52 bg-[#FFFFFF] max-h-[950px] lg:max-h-[602px] xl:max-h-[302px] 2xl:max-h-[302px] mb-9 relative'>
-                        <Image className='absolute h-24 w-24 top-[-10] right-[-10]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
+                        <Image className='absolute h-24 w-24 top-[-10px] right-[-10px]' src={`/assets/images/search-result/hotel-6.png`} alt='pic' height={55} width={55} />
 
                         <p className="text-[#EFEFEF]  absolute top-[12px] right-[-1px] text-sm rotate-[45deg]">
                             Vip Gifts
